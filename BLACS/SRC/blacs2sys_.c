@@ -6,6 +6,9 @@ Int blacs2sys_handle_(Int *BlacsCtxt)
 #endif
 {
 #if (INTFACE == C_CALL)
+   /* Prototype for Cblacs_pinfo */
+   void Cblacs_pinfo(Int *, Int *);
+
    Int i[2];
    extern Int BI_MaxNSysCtxt;
    extern MPI_Comm *BI_SysContxts;

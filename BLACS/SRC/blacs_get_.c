@@ -5,6 +5,9 @@ void Cblacs_get(Int ConTxt, Int what, Int *val)
 F_VOID_FUNC blacs_get_(Int *ConTxt, Int *what, Int *val)
 #endif
 {
+   /* Prototype for Cblacs_pinfo */
+   void Cblacs_pinfo(Int *, Int *);
+
    Int Csys2blacs_handle(MPI_Comm);
    Int ierr, *iptr;
    MpiInt flag;

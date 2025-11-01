@@ -532,5 +532,16 @@ void Cblacs_pinfo(Int *mypnum, Int *nprocs);
 
 #endif
 
+/*
+ * BI_* prototypes
+ */
+void BI_imvcopy(Int m, Int n, Int    *A, Int lda, Int    *buff);
+void BI_smvcopy(Int m, Int n, float  *A, Int lda, float  *buff);
+void BI_dmvcopy(Int m, Int n, double *A, Int lda, double *buff);
+void BI_ivmcopy(Int m, Int n, Int    *A, Int lda, Int    *buff);
+void BI_svmcopy(Int m, Int n, float  *A, Int lda, float  *buff);
+void BI_dvmcopy(Int m, Int n, double *A, Int lda, double *buff);
+void BI_TransDist(BLACSCONTEXT *ctxt, char scope, Int m, Int n, Int *rA,
+                  Int *cA, Int ldrc, BI_DistType *dist, Int rdest, Int cdest);
 
 #endif
