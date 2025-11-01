@@ -16,3 +16,8 @@ BLACS/TESTING/xCbtest
 BLACS/TESTING/xFbtest
 SLmake.inc
 
+.sconsign.dblite
+__pycache__/
+__mod__/
+_bin/
+_run/
