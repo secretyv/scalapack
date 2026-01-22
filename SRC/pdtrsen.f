@@ -352,7 +352,7 @@
 *     ..
 *     .. Local Scalars ..
       LOGICAL            LQUERY, WANTBH, WANTQ, WANTS, WANTSP
-      INTEGER            ICOFFT12, ICTXT, IDUM1, IDUM2, IERR, ILOC1,
+      INTEGER            ICOFFT12, ICTXT, IERR, ILOC1,
      $                   IPW1, ITER, ITT, JLOC1, JTT, K, LIWMIN, LLDT,
      $                   LLDQ, LWMIN, MYROW, MYCOL, N1, N2,
      $                   NB, NOEXSY, NPCOL, NPROCS, NPROW, SPACE,
@@ -360,6 +360,7 @@
      $                   WRK1, IWRK1, WRK2, IWRK2, WRK3, IWRK3
       DOUBLE PRECISION   ELEM, EST, SCALE, RNORM
 *     .. Local Arrays ..
+      INTEGER            IDUM1( 1 ), IDUM2( 1 )
       INTEGER            DESCT12( DLEN_ ), MBNB2( 2 ), MMAX( 1 ),
      $                   MMIN( 1 )
       DOUBLE PRECISION   DPDUM1( 1 )
@@ -372,7 +373,8 @@
 *     ..
 *     .. External Subroutines ..
       EXTERNAL           BLACS_GRIDINFO, CHK1MAT, DESCINIT,
-     $                   IGAMX2D, INFOG2L, PDLACPY, PDTRORD, PXERBLA,
+     $                   IGAMX2D, IGAMN2D, INFOG2L, 
+     $                   PDLACPY, PDTRORD, PXERBLA,
      $                   PCHK1MAT, PCHK2MAT
 *     $                   , PGESYCTD, PSYCTCON
 *     ..

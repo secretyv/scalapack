@@ -171,6 +171,7 @@
       DOUBLE PRECISION   BIGNUM, RCMAX, RCMIN, SMLNUM
 *     ..
 *     .. Local Arrays ..
+      INTEGER            IDUM1( 1 ), IDUM2( 1 )
       INTEGER            DESCC( DLEN_ ), DESCR( DLEN_ )
 *     ..
 *     .. External Subroutines ..
@@ -200,7 +201,7 @@
          INFO = -(600+CTXT_)
       ELSE
          CALL CHK1MAT( M, 1, N, 2, IA, JA, DESCA, 6, INFO )
-         CALL PCHK1MAT( M, 1, N, 2, IA, JA, DESCA, 6, 0, IDUMM, IDUMM,
+         CALL PCHK1MAT( M, 1, N, 2, IA, JA, DESCA, 6, 0, IDUM1, IDUM2,
      $                  INFO )
       END IF
 *
