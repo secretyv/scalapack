@@ -164,6 +164,7 @@
       DOUBLE PRECISION   AII, SMIN
 *     ..
 *     .. Local Arrays ..
+      INTEGER            IDUM1( 1 ), IDUM2( 1 )
       INTEGER            DESCSC( DLEN_ ), DESCSR( DLEN_ )
 *     ..
 *     .. External Subroutines ..
@@ -193,7 +194,7 @@
          INFO = -(500+CTXT_)
       ELSE
          CALL CHK1MAT( N, 1, N, 1, IA, JA, DESCA, 5, INFO )
-         CALL PCHK1MAT( N, 1, N, 1, IA, JA, DESCA, 5, 0, IDUMM, IDUMM,
+         CALL PCHK1MAT( N, 1, N, 1, IA, JA, DESCA, 5, 0, IDUM1, IDUM2,
      $                  INFO )
       END IF
 *
